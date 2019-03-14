@@ -1,5 +1,5 @@
 [package]
-name = "guessing-game"
+name = "rust_study"
 version = "0.1.0"
 authors = ["SungYong Jang <jsy@adain.kr>"]
 edition = "2018"
