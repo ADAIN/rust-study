@@ -3,7 +3,10 @@
 //mod ownership;
 //mod structs;
 //mod enums;
-mod matches;
+//mod matches;
+//mod vectors;
+//mod strings;
+mod hashmaps;
 
 fn main() {
     //number_guess_game::run();
@@ -11,5 +14,8 @@ fn main() {
     //ownership::run();
     //structs::run();
     //enums::run();
-    matches::run();
+    //matches::run();
+    //vectors::run();
+    //strings::run();
+    hashmaps::run();
 }
