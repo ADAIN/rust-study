@@ -1,4 +1,4 @@
-//mod number_guess_game;
+mod number_guess_game;
 //mod for_loops;
 //mod ownership;
 //mod structs;
@@ -6,10 +6,11 @@
 //mod matches;
 //mod vectors;
 //mod strings;
-mod hashmaps;
+//mod hashmaps;
+//mod panics;
 
 fn main() {
-    //number_guess_game::run();
+    number_guess_game::run();
     //for_loops::run();
     //ownership::run();
     //structs::run();
@@ -17,5 +18,6 @@ fn main() {
     //matches::run();
     //vectors::run();
     //strings::run();
-    hashmaps::run();
+    //hashmaps::run();
+    //panics::run();
 }

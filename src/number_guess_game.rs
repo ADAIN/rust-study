@@ -3,6 +3,27 @@ extern crate rand;
 use rand::Rng;
 use std::io;
 use std::cmp::Ordering;
+use std::io::{Error, ErrorKind};
+
+pub struct Guess {
+    value: u32,
+}
+
+impl Guess {
+    pub fn new(value: u32) -> Result<Guess, io::Error> {
+        if value < 1 || value > 100{
+            return Result::Err(Error::new(ErrorKind::InvalidInput, "입력값은 1~100사이의 숫자이어야 합니다."));
+        }
+
+        Ok(Guess {
+            value
+        })
+    }
+
+    pub fn value(&self) -> u32 {
+        self.value
+    }
+}
 
 pub fn run(){
     let mut money: u32 = 1000;
@@ -58,6 +79,14 @@ pub fn run(){
 
             // 입력받은 숫자를 출력한다.
             println!("입력한 숫자: {}", guess);
+
+            let guess = match Guess::new(guess) {
+                Ok(ok) => ok.value(),
+                Err(e) => {
+                    println!("입력값 오류 {:?}", e);
+                    continue
+                },
+            };
 
             match guess.cmp(&secret_number){
                 Ordering::Less => {
