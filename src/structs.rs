@@ -5,22 +5,22 @@ struct User {
     gender: char,
 }
 
-#[derive(Debug)]
-struct Rectangle {
-    width: u32,
-    height: u32
+#[derive(Debug, PartialEq)]
+pub struct Rectangle {
+    pub width: u32,
+    pub height: u32
 }
 
 impl Rectangle {
-    fn get_square(size: u32) -> Rectangle{
+    pub fn get_square(size: u32) -> Rectangle{
         Rectangle {width: size, height: size}
     }
 
-    fn get_size(&self) -> u32{
+    pub fn get_size(&self) -> u32{
         self.height * self.width
     }
 
-    fn can_hold(&self, target: &Rectangle) -> bool{
+    pub fn can_hold(&self, target: &Rectangle) -> bool{
         self.width > target.width && self.height > target.height
     }
 }

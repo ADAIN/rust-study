@@ -53,9 +53,12 @@ pub fn run(){
 //    }
 //    println!("The longest string is {}", result);
 
-    let novel = String::from("Call me Ishmael. Some years ago...");
+    let novel = String::from("Call me Ishmael Some years ago");
     let first_sentence = novel.split('.')
         .next()
         .expect("Could not find a '.'");
     let i = ImportantExcerpt { part: first_sentence };
+    println!("{}", i.part);
+
+    longest_with_an_announcement(novel.as_str(), first_sentence, "HI");
 }
