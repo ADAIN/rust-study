@@ -9,7 +9,9 @@
 //mod hashmaps;
 //mod panics;
 //mod generics;
-mod lifetime;
+//mod lifetime;
+//mod closure;
+mod iter;
 
 fn main() {
     //number_guess_game::run();
@@ -23,5 +25,7 @@ fn main() {
     //hashmaps::run();
     //panics::run();
     //generics::run();
-    lifetime::run();
+    //lifetime::run();
+    //closure::run();
+    iter::run();
 }
