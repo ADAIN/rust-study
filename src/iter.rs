@@ -28,8 +28,23 @@ impl Iterator for Counter {
 }
 
 pub fn run(){
-    let counter = Counter::new();
-    for count in counter.iter() {
+    let mut counter = Counter::new();
+    assert_eq!(counter.next(), Some(1));
+    assert_eq!(counter.next(), Some(2));
+    assert_eq!(counter.next(), Some(3));
+    assert_eq!(counter.next(), Some(4));
+    assert_eq!(counter.next(), Some(5));
+    assert_eq!(counter.next(), None);
+
+    let sum: u32 = Counter::new()
+        .zip(Counter::new().skip(1))
+        .map(|(a, b)| a * b)
+        .filter(|x| x % 3 == 0)
+        .sum();
+
+    assert_eq!(18, sum);
+
+    for count in Counter::new() {
         println!("{}", count);
     }
 
