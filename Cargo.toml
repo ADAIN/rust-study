@@ -3,6 +3,14 @@ name = "rust_study"
 version = "0.1.0"
 authors = ["SungYong Jang <jsy@adain.kr>"]
 edition = "2018"
+discrption = "설명 ...."
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 rand = "0.6.5"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3

@@ -1,5 +1,20 @@
+//! # rust study
+//!
+//! 이것은 연습용
+//!
+//! 이것저것 테스트하는 코드
+//!
+
 pub mod structs;
 
+/// Adds two to the number given.
+///
+/// # Examples
+/// ```
+/// let five = 5;
+/// assert_eq!(7, rust_study::add_two(five));
+/// ```
+///
 pub fn add_two(a: i32) -> i32{
     a + 2
 }
