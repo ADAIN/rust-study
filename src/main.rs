@@ -14,7 +14,8 @@
 //mod iter;
 //mod concurrent;
 //mod mutex;
-mod oop;
+//mod oop;
+mod iflet;
 
 fn main() {
     //number_guess_game::run();
@@ -34,5 +35,6 @@ fn main() {
     //concurrent::run();
     //concurrent::channel_run();
     //mutex::run();
-    oop::run();
+    //oop::run();
+    iflet::run();
 }
