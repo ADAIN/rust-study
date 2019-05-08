@@ -14,9 +14,7 @@
 //mod iter;
 //mod concurrent;
 //mod mutex;
-//mod oop;
-extern crate rust_study;
-use rust_study::Post;
+mod oop;
 
 fn main() {
     //number_guess_game::run();
@@ -36,16 +34,5 @@ fn main() {
     //concurrent::run();
     //concurrent::channel_run();
     //mutex::run();
-    //oop::run();
-
-    let mut post = Post::new();
-
-    post.add_text("I ate a salad for lunch today");
-    assert_eq!("", post.content());
-
-    post.request_review();
-    assert_eq!("", post.content());
-
-    post.approve();
-    assert_eq!("I ate a salad for lunch today", post.content());
+    oop::run();
 }
