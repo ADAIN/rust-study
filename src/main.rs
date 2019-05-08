@@ -11,7 +11,8 @@
 //mod generics;
 //mod lifetime;
 //mod closure;
-mod iter;
+//mod iter;
+mod concurrent;
 
 fn main() {
     //number_guess_game::run();
@@ -27,5 +28,7 @@ fn main() {
     //generics::run();
     //lifetime::run();
     //closure::run();
-    iter::run();
+    //iter::run();
+    //concurrent::run();
+    concurrent::channel_run();
 }
