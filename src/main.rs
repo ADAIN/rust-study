@@ -13,7 +13,8 @@
 //mod closure;
 //mod iter;
 //mod concurrent;
-mod mutex;
+//mod mutex;
+mod oop;
 
 fn main() {
     //number_guess_game::run();
@@ -32,5 +33,6 @@ fn main() {
     //iter::run();
     //concurrent::run();
     //concurrent::channel_run();
-    mutex::run();
+    //mutex::run();
+    oop::run();
 }
