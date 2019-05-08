@@ -12,7 +12,8 @@
 //mod lifetime;
 //mod closure;
 //mod iter;
-mod concurrent;
+//mod concurrent;
+mod mutex;
 
 fn main() {
     //number_guess_game::run();
@@ -30,5 +31,6 @@ fn main() {
     //closure::run();
     //iter::run();
     //concurrent::run();
-    concurrent::channel_run();
+    //concurrent::channel_run();
+    mutex::run();
 }
