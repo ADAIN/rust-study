@@ -16,7 +16,8 @@
 //mod mutex;
 //mod oop;
 //mod iflet;
-mod pattern;
+//mod pattern;
+mod unsafecode;
 
 fn main() {
     //number_guess_game::run();
@@ -38,5 +39,6 @@ fn main() {
     //mutex::run();
     //oop::run();
     //iflet::run();
-    pattern::run();
+    //pattern::run();
+    unsafecode::run();
 }
