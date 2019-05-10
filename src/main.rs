@@ -17,7 +17,8 @@
 //mod oop;
 //mod iflet;
 //mod pattern;
-mod unsafecode;
+//mod unsafecode;
+mod adv_lifetime;
 
 fn main() {
     //number_guess_game::run();
@@ -40,5 +41,6 @@ fn main() {
     //oop::run();
     //iflet::run();
     //pattern::run();
-    unsafecode::run();
+    //unsafecode::run();
+    adv_lifetime::run();
 }
