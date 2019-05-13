@@ -8,9 +8,13 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 rand = "0.6.5"
+syn = "0.14.4"
+quote = "0.6.3"
 
 [profile.dev]
 opt-level = 0
 
 [profile.release]
 opt-level = 3
+
+[lib]

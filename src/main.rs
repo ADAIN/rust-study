@@ -19,7 +19,10 @@
 //mod pattern;
 //mod unsafecode;
 //mod adv_lifetime;
-mod adv_trait;
+//mod adv_trait;
+//mod newtype;
+//mod adv_closure;
+mod macro_test;
 
 fn main() {
     //number_guess_game::run();
@@ -44,5 +47,8 @@ fn main() {
     //pattern::run();
     //unsafecode::run();
     //adv_lifetime::run();
-    adv_trait::run();
+    //adv_trait::run();
+    //newtype::run();
+    //adv_closure::run();
+    macro_test::run();
 }
